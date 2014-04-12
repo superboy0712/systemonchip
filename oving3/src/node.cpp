@@ -13,6 +13,7 @@
 #include<algorithm>// random_shuffle
 #include<iostream>
 #include<fstream>
+#include<systemc.h>
 //#include <boost/filesystem.hpp>
 
 typedef sc_port<node_if<int> > PORT_t;

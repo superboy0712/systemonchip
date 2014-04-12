@@ -10,9 +10,9 @@
 
 #include"node.h"
 #include<systemc.h>
-#include "gmock/gmock.h"
+//#include "gmock/gmock.h"
 #include <string>
-#include "gtest/gtest.h"
+//#include "gtest/gtest.h"
 #include "column_row_defs.h"
 
 void collaborationAndSimmulation(void);

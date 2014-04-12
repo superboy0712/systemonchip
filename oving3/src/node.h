@@ -19,7 +19,7 @@ public:
 	sc_port<node_if<int> > port[4];    // 0 - up, 1 - left, 2 - down, 3 - right
 	bool isTest(const int) const;
 	bool isFree(void) const;
-	Node(sc_module_name _name);
+	//Node(sc_module_name _name);
 	Node(sc_module_name _name, int _id, int _val, bool);
 	const char* getModuleName(void) const;
 	void node_process(void);

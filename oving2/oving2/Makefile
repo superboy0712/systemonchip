@@ -1,7 +1,8 @@
 CC     = g++
 OPT    = -O3
 DEBUG  = -g
-OTHER  = -Wno-deprecated -fpermissive
+SYSTEMC_HOME = /usr/local/systemc-2.3.0/obj/
+OTHER  = -Wno-deprecated -fpermissive -lsystemc -L$(SYSTEMC_HOME)/lib-linux64 -i$(SYSTEM_HOME)/include 
 #CFLAGS = $(OPT) $(OTHER)
 CFLAGS = $(DEBUG) $(OTHER)
 
@@ -17,10 +18,4 @@ control.o: if.h control.h control.cpp
 
 topp.o: button.h control.h top.cpp
 
-ifneq (, $(realpath $(HOME)/systemc/Makefile.defs))
-include ~/systemc/Makefile.defs
-else ifneq (, $(realpath ../Makefile.defs))
-include ../Makefile.defs
-else
-$(error "Cannot find Makefile.defs")
-endif
+
