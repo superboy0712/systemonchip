@@ -14,8 +14,8 @@
 struct matrix {
 
 	enum {
-		column = 10,
-		row = 10
+		column = 3,
+		row = 3
 	};
 };
 
